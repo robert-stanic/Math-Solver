@@ -22,12 +22,12 @@ class ParametricSet;
  */
 class Element {
 public:
-	explicit Element(const std::string& name);
+    explicit Element(const std::string& name);
 
-	friend std::ostream& operator<<(std::ostream& out, const Element& element);
+    friend std::ostream& operator<<(std::ostream& out, const Element& element);
 
 protected:
-	std::string name;
+    std::string name;
 };
 //==============================================================================
 /**
@@ -35,9 +35,9 @@ protected:
  */
 class Set: Element {
 public:
-	explicit Set(const std::string& name);
+    explicit Set(const std::string& name);
 	
-	friend std::ostream& operator<<(std::ostream& out, const Set& set);
+    friend std::ostream& operator<<(std::ostream& out, const Set& set);
 };
 //==============================================================================
 /**
@@ -45,11 +45,11 @@ public:
  */
 class ParametricSet: Set {
 public:
-	explicit ParametricSet(const std::string& name);
+    explicit ParametricSet(const std::string& name);
 	
-	friend std::ostream& operator<<(std::ostream& out, const ParametricSet& set);
-private:
-	std::unique_ptr<Function> function;
+    friend std::ostream& operator<<(std::ostream& out, const ParametricSet& set);
+//private:
+    //std::unique_ptr<Function> function;
 };
 } // namespace Math::Core ======================================================
 

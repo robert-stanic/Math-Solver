@@ -19,9 +19,5 @@ std::ostream& operator<<(std::ostream &out, const Element &element) {
 
 
 
-
-
-
-
 }
 

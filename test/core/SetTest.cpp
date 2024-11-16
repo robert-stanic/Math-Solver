@@ -11,16 +11,16 @@
 namespace SetTest {
 
 void Constructor() {
-	Math::Core::Element element = Math::Core::Element("Element");
-	std::cout << element << std::endl;
+    Math::Core::Element element = Math::Core::Element("Element");
+    std::cout << element << std::endl;
 
 /*
-	assertOk(false, "Element Ok");
-	assertDebug(false, "Element Debug");
-	assertInfo(false, "Element Info");
-	assertWarning(false, "Element Warning");
-	assertError(false, "Element Error");
-	assertFatal(false, "Element Fatal");*/
+    assertOk(false, "Element Ok");
+    assertDebug(false, "Element Debug");
+    assertInfo(false, "Element Info");
+    assertWarning(false, "Element Warning");
+    assertError(false, "Element Error");
+    assertFatal(false, "Element Fatal");*/
 
 }
 
@@ -33,9 +33,9 @@ void Constructor() {
 
 
 int main() {
-	using namespace SetTest;
+    using namespace SetTest;
 
-	Constructor();
+    Constructor();
 
 
 }
